@@ -1,0 +1,29 @@
+#navbar .navbar-logo {
+  color: #007675;
+}
+
+#navbar .nav-link {
+  margin-left: 20px;
+  /* background-color: violet; */
+}
+
+#navbar .navbar-btn {
+  background-color: azure;
+}
+
+#navbar .navbar-btn-login {
+  outline: 1px solid #007675;
+  background-color: #ffff;
+  color: #007675;
+  font-weight: 600;
+  padding: 9px 38px;
+  border: none;
+}
+
+#navbar .navbar-btn-join {
+  outline: 1px solid #007675;
+  background-color: #007675;
+  font-weight: 600;
+  padding: 9px 38px;
+  border: none;
+}

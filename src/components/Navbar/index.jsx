@@ -1,29 +1,46 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-import "./style.module.css";
+import { Navbar, Nav, Container, Button, Row, Col } from "react-bootstrap";
+import "./navbar.css";
 
 function index() {
+  const navbarMenu = [
+    {
+      name: "Course",
+      path: "course",
+    },
+    {
+      name: "Categories",
+      path: "categories",
+    },
+    {
+      name: "About",
+      path: "about",
+    },
+  ];
+
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar id="navbar" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">TeachUs.</Navbar.Brand>
+        <Navbar.Brand href={`home`} className="navbar-logo">
+          TeachUs.
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+        <Navbar.Collapse id="basic-navbar-nav ">
+          <Nav className="me-auto nav-link">
+            {navbarMenu.map((menu) => (
+              <Nav.Link href={menu.path} key={menu.name}>
+                {menu.name}
+              </Nav.Link>
+            ))}
           </Nav>
+          <div className="d-flex gap-3">
+            {/* <Col>
+            </Col> */}
+            <Button className="navbar-btn-login">Login</Button>
+            {/* <Col>
+            </Col> */}
+            <Button className="navbar-btn-join">Join Now</Button>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
