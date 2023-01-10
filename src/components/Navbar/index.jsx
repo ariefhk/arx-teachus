@@ -1,6 +1,15 @@
 import React from "react";
-import { Navbar, Nav, Container, Button, Row, Col } from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  Container,
+  Button,
+  Row,
+  Col,
+  Image,
+} from "react-bootstrap";
 import "./navbar.css";
+import { Shopping, Search } from "../../assets";
 
 function index() {
   const navbarMenu = [
@@ -33,12 +42,17 @@ function index() {
               </Nav.Link>
             ))}
           </Nav>
-          <div className="d-flex gap-3">
-            {/* <Col>
-            </Col> */}
+          <div className="d-flex gap-3 ">
+            <Row className="gap-3 align-items-center">
+              <Col lg="2">
+                <Image src={Search} />
+              </Col>
+              <Col lg="2">
+                <Image src={Shopping} />
+              </Col>
+            </Row>
+            <div style={{ borderLeft: "1.5px solid rgba(0, 0, 0, 0.1)" }}></div>
             <Button className="navbar-btn-login">Login</Button>
-            {/* <Col>
-            </Col> */}
             <Button className="navbar-btn-join">Join Now</Button>
           </div>
         </Navbar.Collapse>
