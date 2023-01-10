@@ -1,0 +1,17 @@
+#hero .hero-title {
+  font-size: 48px;
+}
+
+#hero .hero-btn-start {
+  border: none;
+  font-size: 18px;
+  background-color: rgba(0, 118, 117, 1);
+  color: #ffff;
+}
+
+#hero .hero-btn-instructor {
+  border: none;
+  font-size: 18px;
+  background-color: rgba(0, 118, 117, 0.1);
+  color: rgba(0, 118, 117, 1);
+}

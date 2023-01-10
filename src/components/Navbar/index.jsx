@@ -28,7 +28,7 @@ function index() {
   ];
 
   return (
-    <Navbar id="navbar" expand="lg">
+    <Navbar id="navbar" expand="lg" className="py-3">
       <Container>
         <Navbar.Brand href={`home`} className="navbar-logo">
           TeachUs.
