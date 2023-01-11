@@ -23,7 +23,7 @@ function index() {
           <div className="d-flex gap-3 pt-5">
             <Button className="p-2 hero-btn-start">Start Learning</Button>
             <Button className="p-2 hero-btn-instructor">
-              Become an Instructor
+              Become an Instructor test
             </Button>
           </div>
         </Col>
